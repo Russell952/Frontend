@@ -1,0 +1,112 @@
+body {
+  background-color:darkgreen;
+  text-align: center;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+span {
+    text-align: center;
+    padding-left: 5px;
+    color: rgb(231, 247, 5);
+}
+
+#h1 {
+    text-align: center;
+    background-color: y;
+}
+
+.navbar ul {
+    display: flex;
+    list-style:circle;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(194, 204, 53);
+}
+
+.skills {
+    padding: 10px;
+    box-shadow: 0 4px 10px;
+    background-color: white;
+    max-width: 200px;
+    border-radius: 5px;
+    margin: 20px auto;
+    color: darkgreen;
+}
+
+.skills:hover {
+    transform: scale(1.02);
+}
+
+#skill {
+    color: rgb(231, 247, 5);
+}
+
+.projects {
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 4px 10px;
+    background-color: white;
+    max-width: 300px;;
+    border-radius: 5px;
+    color: darkgreen;
+}
+
+.projects:hover {
+    transform: scale(1.02);
+}
+
+#projecs {
+    color: rgb(231, 247, 5);
+}
+
+#about {
+    color: rgb(231, 247, 5);
+}
+
+.profile-pic{
+    border-radius: 500px;
+    width: 180px;
+    height: 190px;
+}
+
+.span {
+    color: rgb(231, 247, 5);
+}
+
+.input {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    color: darkgreen;
+}
+
+.input-space {
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    color: darkgreen;
+}
+
+#contact {
+    color: rgb(231, 247, 5);
+}
+
+.text {
+    text-align: center;
+}
+
+h3 {
+    color: rgb(194, 204, 53);
+    text-align: center;
+}

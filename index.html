@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Eshiet Russell | Web Developer</title>
+
+    <link rel="icon" type="image/x-icon" href="pictures/favicon.ico" />
+
+    <meta name="description" content="Modern Web Developer portfolio showcasing skills, projects and contact information."/>
+
+    <meta name="keywords" content="Web Developer, Frontend Developer, HTML, CSS, JavaScript, Projects, Contact"/>
+
+    <meta name="author" content="Eshiet Russell"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- <meta property="og:title" content="Your Name | Web Developer" />
+    <meta property="og:description" content="Check out my portfolio, projects, and contact information." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="preview.png" /> -->
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <h1 id="h1"><span class="span">My Portfolio</span></h1>
+        <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projecs">Projects</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>My Name is <span>ESHIET RUSSELL</span></h1>
+        <img src="pictures/IMG_20251026_120709_007.jpg" class="profile-pic" alt="possibly a picture of Eshiet Russell"/>
+        <h2 id="about">About Me</h2>
+        <h3>I am a passionate learner who loves creating websites, exploring new tech, and<br>
+             challenging myself. I enjoy designing clean user interfaces and improving my 
+            skills every day.</h3>
+    </header>
+
+    <!-- this is the skills section -->
+    <section id="skills">
+        <h2 id="skill">Skills</h2>
+        <p class="skills">Html/Css</p>
+        <p class="skills">JavaScript</p>
+        <p class="skills">UI/UX Design</p>
+    </section>
+
+    <!-- this is the projects section -->
+    <section id="projects">
+        <h2 id="projecs">Projects</h2>
+        <p class="projects"><strong>Personal Portfolio</strong><br>A portfolio website using Html and Css</p>
+        <p class="projects"><strong>Weather App</strong><br>A clean weather app built using API data and dynamic UI</p>
+        <p class="projects"><strong>To do List App</strong><br>An efficient app for managing tasks seamlessly</p>
+    </section>
+
+    <!-- this is the contacts section -->
+    <section id="contacts">
+        <h2 id="contact">Contact Me</h2>
+        <form id="contactForm">
+           <input type="text" name="name" placeholder="Enter your name" required class="input" id="name">
+           <br>
+
+           <input type="email" name="email" placeholder="Enter your email" required class="input" id="email">
+           <br>
+
+           <textarea name="message" placeholder="Start typing..." required class="input-space" id="message"></textarea>
+           <br>
+
+           <button type="submit">Send</button>
+        </form>
+        <p id="formMessage" style="color: rgb(231, 247, 5); font-weight: bold;"></p>
+
+    </section>
+
+    <section class="footer">
+        <p>&copy; 2026 Eshiet Russell. All rights reserved.</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("NhcyB3wG1rAwAAnu_");
+</script>
+
+<script src="script.js"></script>
+</body> 
+</html>
