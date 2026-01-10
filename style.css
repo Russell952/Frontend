@@ -1,6 +1,7 @@
 body {
   background-color:darkgreen;
   text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
@@ -109,4 +110,29 @@ span {
 h3 {
     color: rgb(194, 204, 53);
     text-align: center;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+label {
+    font-size: 20px;
+    color: rgb(194, 204, 53);
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;   
+
 }
