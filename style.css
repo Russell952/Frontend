@@ -234,3 +234,15 @@ select{
 .whatsapp-btn:hover{
   transform: scale(1.05);
 }
+
+.main {
+    color: rgb(231, 247, 5);
+}
+
+.col {
+    color: rgb(194, 204, 53);
+}
+
+.str {
+    font-weight: bold;
+}
