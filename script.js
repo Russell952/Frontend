@@ -62,3 +62,23 @@ form.addEventListener("submit", function (e) {
       statusCard.style.color = "red";
     });
 });
+
+document.getElementById("contactForm")
+  .addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const service = document.getElementById("service").value;
+    const msg = document.getElementById("message").value;
+
+    const whatsappNumber = "2348037073519"; // replace with your number
+    const text = `Hi! My name is ${name}. I need the following service: ${service}. Email: ${email}. Details: ${msg}`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+    window.open(url, "_blank"); // opens WhatsApp in new tab/app
+
+    // Optional: reset form
+    this.reset();
+});

@@ -17,7 +17,6 @@ span {
 
 #h1 {
     text-align: center;
-    background-color: y;
 }
 
 .navbar ul {
@@ -101,6 +100,7 @@ span {
 
 #contact {
     color: rgb(231, 247, 5);
+    margin: 0;
 }
 
 .text {
@@ -123,9 +123,9 @@ h3 {
 label {
     font-size: 20px;
     color: rgb(194, 204, 53);
-}
+} 
 
-button {
+  .btn {
     width: 100px;
     height: 40px;
     border-radius: 5px;
@@ -133,6 +133,104 @@ button {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 10px;   
+    margin-top: 10px;    
 
+} 
+
+.btn:hover {
+    background-color: rgba(23, 71, 173, 0.945);
+    color: darkblue;
+}
+
+.button:hover {
+    background-color: #128C7E;
+}
+
+#img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.hero h1{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta-group{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn{
+  padding: 10px 10px 20px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.primary{
+  background: #25D366;
+  color: white;
+  border-radius: 6px;
+  margin: 10px 5px 10px 0;
+  width: 150px;
+  height: 20px;
+  padding: 20px 10px 20px 10px;
+  text-decoration: none;
+} 
+
+.whatsapp-float{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btnprimary {
+    background: #25D366;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.contact {
+    color: rgb(231, 247, 5);
+    margin: 30px;
+} 
+
+select{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+}
+
+.whatsapp-container{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.whatsapp-btn{
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.whatsapp-btn:hover{
+  transform: scale(1.05);
 }
