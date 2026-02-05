@@ -38,30 +38,54 @@
         <h1>My Name is <span>ESHIET RUSSELL</span></h1>
         <img src="pictures/IMG_20251026_120709_007.jpg" class="profile-pic" alt="possibly a picture of Eshiet Russell" />
         <h2 id="about">About Me</h2>
-        <h3>I am a passionate learner who loves creating websites, exploring new tech, and<br>
-             challenging myself. I enjoy designing clean user interfaces and improving my 
-            skills every day. <br>I fix website layout & build simple business pages — fast & affordable</h3>
+        <div class="about-me">
+
+                <p>I am a Frontend Developer who loves turning ideas into clean, responsive, and user-friendly web experiences. I focus on writing simple, 
+                    maintainable code and building interfaces that look good and work smoothly across all devices.
+                </p>
+                <p>Right now, I'm sharpening my skills in HTML, CSS, and JavaScript while exploring modern tools like Git and frameworks like React. 
+                    I enjoy the process of learning by building - experimenting, breaking things, and fixing them, and improving with every project.
+                </p>
+                <p>My goal is to grow through real world projects, collaboration, and mentorship while creating web experiences that puts users first.</p>
+
+        </div>
     </header>
 
     <!-- this is the skills section -->
     <section id="skills">
         <h2 id="skill">Skills</h2>
-        <p class="skills">Html/Css</p>
+       <div class="skill-container">
+         <p class="skills">Html/Css</p>
         <p class="skills">JavaScript</p>
         <p class="skills">UI/UX Design</p>
+       </div>
     </section>
 
     <!-- this is the projects section -->
     <section id="projects">
         <h2 id="projecs">Projects</h2>
-        <p class="projects"><strong>Personal Portfolio</strong><br>A portfolio website using Html and Css</p>
-        <p class="projects"><strong>Weather App</strong><br>A clean weather app built using API data and dynamic UI</p>
-        <p class="projects"><strong>To do List App</strong><br>An efficient app for managing tasks seamlessly</p>
+        <div class="project-container">
+            <p class="projects"><strong>Personal Portfolio</strong><br>A portfolio website using Html, CSS, and JavaScript</p>
+            <p class="projects"><strong>Image Search App</strong><br>A clean app for searching images using API data with clean dynamic UI</p>
+            <p class="projects"><strong>To do List App</strong><br>An efficient app for managing tasks seamlessly</p>
+        </div>
     </section>
 
 
     <section class="footer">
-        <p>&copy; 2026 Eshiet Russell. All rights reserved.</p>
+       <footer>
+         <p>&copy; 2026 Eshiet Russell. All rights reserved.</p>
+        <p>Let's Connect</p>
+            <div class="whatsapp-container">
+                <a class="whatsapp-btn"
+                href="https://wa.me/2348037073519"
+                target="_blank">
+                Chat on WhatsApp
+                </a>
+                <button class="LinkedIn-btn"><a href="https://www.linkedin.com/in/russell-eshiet-9944b6384" class="email">Linkedin</a></button>
+                <button class="email-btn"><a href="mailto:russelleshiet107@gmail.com" class="email">Email</a></button>
+            </div>
+       </footer>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>

@@ -1,18 +1,18 @@
 body {
-  background-color:darkgreen;
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Algerian' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: wheat;
+  background-color: black;
 }
 
 h1 {
-    color: darkblue;
     text-align: center;
 }
 
 span {
     text-align: center;
     padding-left: 5px;
-    color: rgb(231, 247, 5);
+    
 }
 
 #h1 {
@@ -29,49 +29,61 @@ span {
     justify-content: space-between;
 }
 
+.nav{
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.nav ul {
+    display: flex;
+    list-style:circle;
+    gap: 1rem;
+    padding: 5px;
+    margin: 2px;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.list-styles {
+    list-style: none;
+    text-decoration: none;
+    color: wheat;
+    margin: 10px;
+}
+
 .navbar a {
     text-decoration: none;
-    color: rgb(194, 204, 53);
+    color: wheat;
 }
 
 .skills {
     padding: 10px;
     box-shadow: 0 4px 10px;
-    background-color: white;
+    background-color: rgb(43, 42, 42);
     max-width: 200px;
     border-radius: 5px;
     margin: 20px auto;
-    color: darkgreen;
 }
 
 .skills:hover {
     transform: scale(1.02);
 }
 
-#skill {
-    color: rgb(231, 247, 5);
-}
-
 .projects {
     margin: 20px auto;
     padding: 10px;
     box-shadow: 0 4px 10px;
-    background-color: white;
-    max-width: 300px;;
+    background-color: rgb(43, 42, 42);
+    max-width: 300px;
     border-radius: 5px;
-    color: darkgreen;
 }
 
 .projects:hover {
     transform: scale(1.02);
-}
-
-#projecs {
-    color: rgb(231, 247, 5);
-}
-
-#about {
-    color: rgb(231, 247, 5);
 }
 
 .profile-pic{
@@ -80,26 +92,29 @@ span {
     height: 190px;
 }
 
-.span {
-    color: rgb(231, 247, 5);
+.about-me {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 5px;
+    background-color: rgb(43, 42, 42);
+    border-radius: 5px;
 }
 
 .input {
     width: 300px;
     height: 50px;
     border-radius: 5px;
-    color: darkgreen;
 }
 
 .input-space {
     width: 300px;
     height: 100px;
     border-radius: 5px;
-    color: darkgreen;
 }
 
 #contact {
-    color: rgb(231, 247, 5);
     margin: 0;
 }
 
@@ -108,7 +123,6 @@ span {
 }
 
 h3 {
-    color: rgb(194, 204, 53);
     text-align: center;
 }
 
@@ -122,7 +136,6 @@ h3 {
 
 label {
     font-size: 20px;
-    color: rgb(194, 204, 53);
 } 
 
   .btn {
@@ -158,52 +171,13 @@ label {
   margin-bottom: 10px;
 }
 
-.cta-group{
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-
 .btn{
   padding: 10px 10px 20px 10px;
   border-radius: 6px;
   text-decoration: none;
 }
 
-.primary{
-  background: #25D366;
-  color: white;
-  border-radius: 6px;
-  margin: 10px 5px 10px 0;
-  width: 150px;
-  height: 20px;
-  padding: 20px 10px 20px 10px;
-  text-decoration: none;
-} 
-
-.whatsapp-float{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  padding: 12px 16px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btnprimary {
-    background: #25D366;
-    color: white;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    text-decoration: none;
-}
-
 .contact {
-    color: rgb(231, 247, 5);
     margin: 30px;
 } 
 
@@ -235,14 +209,134 @@ select{
   transform: scale(1.05);
 }
 
-.main {
-    color: rgb(231, 247, 5);
+.LinkedIn-btn {
+    display: inline-block;
+    background-color: #0077B5;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s;
+    cursor: pointer;
 }
 
-.col {
-    color: rgb(194, 204, 53);
+.LinkedIn-btn:hover {
+    transform: scale(1.05);
+    background-color: #005582;
 }
 
+.email-btn {
+    display: inline-block;
+    background-color: #D44638;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+    
+.email-btn:hover {
+    transform: scale(1.05);
+}
+
+.email {
+    color: white;
+    text-decoration: none;
+}
 .str {
     font-weight: bold;
+}
+
+.footer {
+    background-color: rgb(77, 75, 75);
+    padding: 10px;
+}
+
+.skill-container, .project-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 
+   RESPONSIVE STYLES */
+
+/* tablets */
+@media (max-width: 1024px) {
+
+  .about-me {
+    width: 80%;
+  }
+
+  .skill-container,
+  .project-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar ul,
+  .nav,
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* mobile devices */
+@media (max-width: 768px) {
+
+  .about-me {
+    width: 95%;
+  }
+
+  .input,
+  .input-space {
+    width: 90%;
+  }
+
+  .skills,
+  .projects {
+    max-width: 90%;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 150px;
+  }
+
+  .navbar ul,
+  .nav,
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .skill-container,
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* very small phones */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 90%;
+  }
 }
