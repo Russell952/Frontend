@@ -29,15 +29,6 @@ span {
     justify-content: space-between;
 }
 
-.nav{
-    display: flex;
-    gap: 2rem;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    justify-content: space-between;
-}
-
 .nav ul {
     display: flex;
     list-style:circle;
@@ -74,15 +65,6 @@ span {
 .skills:hover {
     transform: scale(1.02);
 }
-
-/* .projects {
-    margin: 20px auto;
-    padding: 10px;
-    box-shadow: 0 4px 10px;
-    background-color: rgb(43, 42, 42);
-    max-width: 300px;
-    border-radius: 5px;
-} */
 
 .projects:hover {
     transform: scale(1.02);
@@ -312,7 +294,7 @@ select{
 
 .responsive-icon {
   font-size: 40px;
-  color: #6a778b; /* like Bootstrap blue */
+  color: #6a778b;
 }
 
 

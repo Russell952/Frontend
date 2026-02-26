@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+  });
+});
+
 // ==========================
 // script.js
 // ==========================
@@ -83,9 +92,3 @@ document.getElementById("contactForm")
     this.reset();
 });
 
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active'); 
-});
