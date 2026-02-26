@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <title>Eshiet Russell | Web Developer</title>
 
+    <script src="https://kit.fontawesome.com/67b6166670.js" crossorigin="anonymous"></script>
+
     <link rel="icon" type="image/x-icon" href="pictures/favicon.ico" />
 
     <meta name="description" content="Modern Web Developer portfolio showcasing skills, projects and contact information." />
@@ -35,10 +37,17 @@
         </ul>
     </nav>
     <header>
-        <h1>My Name is <span>ESHIET RUSSELL</span></h1>
-        <img src="pictures/IMG_20251026_120709_007.jpg" class="profile-pic" alt="possibly a picture of Eshiet Russell" />
-        <h2 id="about">About Me</h2>
+        
+        <div class="headline">
+            <h1>My Name is <span>ESHIET RUSSELL ISAIAH</span></h1>
+            <p class="subtitle">Frontend Developer • Student • Creator</p>
+            <img src="pictures/IMG_20251026_120709_007.jpg" class="profile-pic" alt="possibly a picture of Eshiet Russell" />
+            <a href="Eshiet-Russell-Isaiah_CV.pdf" class="download-btn" download>Download CV</a>
+            <h2 id="about">About Me</h2>
+        </div>
         <div class="about-me">
+
+            
 
                 <p>I am a Frontend Developer who loves turning ideas into clean, responsive, and user-friendly web experiences. I focus on writing simple, 
                     maintainable code and building interfaces that look good and work smoothly across all devices.
@@ -53,11 +62,35 @@
 
     <!-- this is the skills section -->
     <section id="skills">
-        <h2 id="skill">Skills</h2>
+        <h2 id="skill">My Skills/Tools</h2>
        <div class="skill-container">
-         <p class="skills">Html/Css</p>
-        <p class="skills">JavaScript</p>
-        <p class="skills">UI/UX Design</p>
+            <div class="skills">
+                <i class="fa-brands fa-html5 fa-2xl" style="color: #d83518;"></i>
+                <p>Html</p>
+            </div>
+
+            <div class="skills">
+                <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                <p>CSS</p>
+            </div>
+
+            <div class="skills">
+                <i class="fa-brands fa-square-js fa-2xl" style="color: #a7c60c;"></i>
+                <p>JavaScript</p>
+            </div>
+
+            <div class="skills">
+                <i class="fa fa-laptop fa-2xl"></i>
+                <p>Responsive Design</p>
+            </div>
+            
+            <div class="skills">
+                <p>VS Code</p>
+            </div>
+            
+            <div class="skills">
+                <p>Git/Github</p>
+            </div>
        </div>
     </section>
 
@@ -65,16 +98,27 @@
     <section id="projects">
         <h2 id="projecs">Projects</h2>
         <div class="project-container">
-            <p class="projects"><strong>Personal Portfolio</strong><br>A portfolio website using Html, CSS, and JavaScript</p>
-            <p class="projects"><strong>Image Search App</strong><br>A clean app for searching images using API data with clean dynamic UI</p>
-            <p class="projects"><strong>To do List App</strong><br>An efficient app for managing tasks seamlessly</p>
+            <div class="project-card">
+                <p class="projects"><strong>Personal Portfolio</strong><br>A portfolio website using Html, CSS, and JavaScript</p>
+                <a href="https://astonishing-alpaca-12a6ed.netlify.app" target="_blank">Open Site</a>
+            </div>
+
+            <div class="project-card">
+                <p class="projects"><strong>Image Search App</strong><br>A clean app for searching images using API data with clean dynamic UI</p>
+                <a href="https://russell952.github.io/Image_Search_app/" target="_blank">Open Site</a>
+            </div>
+
+            <div class="project-card">
+                <p class="projects"><strong>To do List App</strong><br>An efficient app for managing tasks seamlessly</p>
+                <p style="color: green;">In progress</p>
+            </div>
         </div>
     </section>
 
 
     <section class="footer">
        <footer>
-         <p>&copy; 2026 Eshiet Russell. All rights reserved.</p>
+         
         <p>Let's Connect</p>
             <div class="whatsapp-container">
                 <a class="whatsapp-btn"
@@ -85,6 +129,8 @@
                 <button class="LinkedIn-btn"><a href="https://www.linkedin.com/in/russell-eshiet-9944b6384" class="email">Linkedin</a></button>
                 <button class="email-btn"><a href="mailto:russelleshiet107@gmail.com" class="email">Email</a></button>
             </div>
+
+            <p>&copy; 2026 Eshiet Russell. All rights reserved.</p>
        </footer>
     </section>
 

@@ -61,10 +61,12 @@ span {
 }
 
 .skills {
-    padding: 10px;
+    padding: 20px 10px;
+    padding-top: 5%;
     box-shadow: 0 4px 10px;
     background-color: rgb(43, 42, 42);
-    max-width: 200px;
+    width: 100px;
+    height: 73px;
     border-radius: 5px;
     margin: 20px auto;
 }
@@ -73,14 +75,14 @@ span {
     transform: scale(1.02);
 }
 
-.projects {
+/* .projects {
     margin: 20px auto;
     padding: 10px;
     box-shadow: 0 4px 10px;
     background-color: rgb(43, 42, 42);
     max-width: 300px;
     border-radius: 5px;
-}
+} */
 
 .projects:hover {
     transform: scale(1.02);
@@ -221,6 +223,7 @@ select{
     font-size: 16px;
     transition: transform 0.2s;
     cursor: pointer;
+    border: none;
 }
 
 .LinkedIn-btn:hover {
@@ -239,6 +242,7 @@ select{
     font-size: 16px;
     transition: transform 0.2s;
     cursor: pointer;
+    border: none;
 }
     
 .email-btn:hover {
@@ -262,6 +266,38 @@ select{
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.project-card {
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 4px 10px;
+    background-color: rgb(43, 42, 42);
+    max-width: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card a {
+  text-align: left;
+  color: #bbb5b5;
+  text-decoration: none;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-btn {
+  text-decoration: none;
+  color: wheat;
+  background-color: rgb(43, 42, 42);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px;
 }
 
 /* 
