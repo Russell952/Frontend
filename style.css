@@ -338,13 +338,15 @@ select{
         gap: 15px;
     }
 
-    .navbar ul.active {
+    .nav-links.active {
         display: flex;
     }
 
     .hamburger {
         display: flex;
         justify-content: end;
+        width: 30px;
+        height: 30px;
     }
 }
 
