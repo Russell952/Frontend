@@ -343,7 +343,8 @@ select{
     }
 
     .hamburger {
-        display: block;
+        display: flex;
+        justify-content: end;
     }
 }
 
