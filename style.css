@@ -300,6 +300,21 @@ select{
   margin: 20px;
 }
 
+.git-icon {
+  font-size: 40px;
+  color: #F1502F;
+}
+
+.css-icon {
+  font-size: 40px;
+  color: #264DE4; /* CSS3 official blue */
+}
+
+.responsive-icon {
+  font-size: 40px;
+  color: #6a778b; /* like Bootstrap blue */
+}
+
 /* 
    RESPONSIVE STYLES */
 
