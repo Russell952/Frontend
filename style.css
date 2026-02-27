@@ -1,8 +1,8 @@
 body {
   text-align: center;
   font-family: 'Algerian' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: wheat;
-  background-color: black;
+  color: #ECEFF1;
+  background-color: #191970;
 }
 
 h1 {
@@ -42,20 +42,21 @@ span {
 .list-styles {
     list-style: none;
     text-decoration: none;
-    color: wheat;
+    color: #ECEFF1;
     margin: 10px;
 }
 
 .navbar a {
     text-decoration: none;
-    color: wheat;
+    color: #ECEFF1;
 }
 
 .skills {
     padding: 20px 10px;
     padding-top: 5%;
     box-shadow: 0 4px 10px;
-    background-color: rgb(43, 42, 42);
+    color: #191970;
+    background-color: #ECEFF1;
     width: 100px;
     height: 73px;
     border-radius: 5px;
@@ -73,7 +74,7 @@ span {
 .profile-pic{
     border-radius: 500px;
     width: 180px;
-    height: 190px;
+    height: 210px;
 }
 
 .about-me {
@@ -82,7 +83,8 @@ span {
     width: 50%;
     padding: 10px;
     box-shadow: 0 4px 5px;
-    background-color: rgb(43, 42, 42);
+    background-color: #ECEFF1;
+    color: #191970;
     border-radius: 5px;
 }
 
@@ -126,8 +128,8 @@ label {
     width: 100px;
     height: 40px;
     border-radius: 5px;
-    background-color: darkblue;
-    color: white;
+    background-color: #ECEFF1;
+    color: #191970;
     font-size: 16px;
     cursor: pointer;
     margin-top: 10px;
@@ -136,8 +138,8 @@ label {
 } 
 
 .btn:hover {
-    background-color: rgba(23, 71, 173, 0.945);
-    color: darkblue;
+    background-color: #191970;
+    color: #ECEFF1;
 }
 
 .button:hover {
@@ -188,6 +190,7 @@ select{
   font-weight: bold;
   font-size: 16px;
   transition: transform 0.2s;
+  pointer-events: none;
 }
 
 .whatsapp-btn:hover{
@@ -205,6 +208,7 @@ select{
     font-size: 16px;
     transition: transform 0.2s;
     cursor: pointer;
+    pointer-events: none;
     border: none;
 }
 
@@ -224,6 +228,7 @@ select{
     font-size: 16px;
     transition: transform 0.2s;
     cursor: pointer;
+    pointer-events: none;
     border: none;
 }
     
@@ -240,8 +245,10 @@ select{
 }
 
 .footer {
-    background-color: rgb(77, 75, 75);
+    background-color: #ECEFF1;
     padding: 10px;
+    width: 100%;
+    color: #191970;
 }
 
 .skill-container, .project-container {
@@ -254,7 +261,8 @@ select{
     margin: 20px auto;
     padding: 10px;
     box-shadow: 0 4px 10px;
-    background-color: rgb(43, 42, 42);
+    color: #191970;
+    background-color: #ECEFF1;
     max-width: 300px;
     border-radius: 5px;
     display: flex;
@@ -263,7 +271,7 @@ select{
 
 .project-card a {
   text-align: left;
-  color: #bbb5b5;
+  color: #191970;
   text-decoration: none;
 }
 
@@ -275,8 +283,8 @@ select{
 
 .download-btn {
   text-decoration: none;
-  color: wheat;
-  background-color: rgb(43, 42, 42);
+  color: #191970;
+  background-color: #ECEFF1;
   padding: 10px 20px;
   border-radius: 5px;
   margin: 20px;
@@ -306,9 +314,11 @@ select{
     cursor: pointer;
 }
 
+   /* RESPONSIVE STYLES */
+
 /* Mobile styles */
 @media (max-width: 768px) {
-    .navbar ul {
+    .navbar ul, .nav-links {
         display: none; /* hide links */
         flex-direction: column;
         position: absolute;
@@ -326,40 +336,12 @@ select{
 
     .hamburger {
         display: flex;
-        justify-content: start;
+        justify-content: end;
         width: 30px;
         height: 30px;
     }
-}
 
-/* 
-   RESPONSIVE STYLES */
-
-/* tablets */
-@media (max-width: 1024px) {
-
-  .about-me {
-    width: 80%;
-  }
-
-  .skill-container,
-  .project-container {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .navbar ul,
-  .nav,
-  .nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-/* mobile devices */
-@media (max-width: 768px) {
-
-  .about-me {
+    .about-me {
     width: 95%;
   }
 
@@ -386,11 +368,42 @@ select{
     gap: 1rem;
   }
 
-  .skill-container,
   .project-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .skill-container {
+    display: grid;
+    height: 500px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .responsive-icon, .fa-square-js, .fa-html5 {
+    margin-top: 20px;
+  }
+}
+
+/* tablets */
+@media (max-width: 1024px) {
+
+  .about-me {
+    width: 80%;
+  }
+
+  
+  .project-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar ul,
+  .nav,
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
