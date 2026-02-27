@@ -128,6 +128,7 @@ label {
     width: 100px;
     height: 40px;
     border-radius: 5px;
+    border: none;
     background-color: #ECEFF1;
     color: #191970;
     font-size: 16px;
@@ -140,6 +141,7 @@ label {
 .btn:hover {
     background-color: #191970;
     color: #ECEFF1;
+    border: 1px solid #ECEFF1;
 }
 
 .button:hover {
@@ -342,7 +344,7 @@ select{
 
     .hamburger {
         display: flex;
-        justify-content: end;
+        margin-left: auto;
         width: 30px;
         height: 30px;
     }
@@ -365,9 +367,9 @@ select{
 
     .hamburger-menu {
         display: flex;
-        justify-content: end;
         width: 30px;
         height: 30px;
+        margin-left: auto;
     }
 
     .about-me {

@@ -151,13 +151,47 @@
 
 <script src="script.js"></script>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("nav-links");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const hamburger = document.getElementById("hamburger");
+//   const navLinks = document.getElementById("nav-links");
 
-  hamburger.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-  });
+//   hamburger.addEventListener("click", function (e) {
+//     e.stopPropagation();
+//     navLinks.classList.toggle("active");
+//   });
+
+//   document.addEventListener("click", function (e) {
+//     const isClickInsideMenu = navigation.contains(e.target);
+//     const isClickOnHamburger = hamburger-menu.contains(e.target);
+
+//     if (!isClickInsideMenu && !isClickOnHamburger) {
+//         hamburger-menu.classList.remove("active")
+//         navigation.classList.remove("active")
+//     }
+//   })
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    // Toggle menu on hamburger click
+    hamburger.addEventListener("click", function (e) {
+        e.stopPropagation(); // Stop this click from bubbling to document
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+    });
+
+    // Close menu if click happens anywhere else
+    window.addEventListener("click", function (e) {
+        if (navLinks.classList.contains("active")) {
+            // Check if click was NOT inside menu or hamburger
+            if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+            }
+        }
+    });
 });
 </script>
 </body> 
