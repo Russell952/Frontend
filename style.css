@@ -31,7 +31,7 @@ span {
 
 .nav ul {
     display: flex;
-    list-style:circle;
+    list-style: none;
     gap: 1rem;
     padding: 5px;
     margin: 2px;
@@ -314,6 +314,12 @@ select{
     cursor: pointer;
 }
 
+.hamburger-menu {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
    /* RESPONSIVE STYLES */
 
 /* Mobile styles */
@@ -341,8 +347,36 @@ select{
         height: 30px;
     }
 
+    .nav ul, .navigation {
+        display: none; /* hide links */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #222;
+        padding: 20px;
+        border-radius: 8px;
+        gap: 15px;
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        justify-content: end;
+        width: 30px;
+        height: 30px;
+    }
+
     .about-me {
     width: 95%;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 180px;
   }
 
   .input,
@@ -353,11 +387,6 @@ select{
   .skills,
   .projects {
     max-width: 90%;
-  }
-
-  .profile-pic {
-    width: 140px;
-    height: 150px;
   }
 
   .navbar ul,
