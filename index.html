@@ -30,26 +30,31 @@
 </head>
 <body>
     <nav class="navbar">
-        <h1 id="h1"><span class="span">My Portfolio</span></h1>
+        <p id="h1">MY PORTFOLIO</p>
 
          <!-- Hamburger for mobile -->
         <div class="hamburger" id="hamburger">
             &#9776; <!-- ☰ symbol -->
         </div>
+
         <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projecs">Projects</a></li>
-        <li><a href="contact.html">Contacts</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="contact.html">Contacts</a></li>
         </ul>
     </nav>
     <header>
         
         <div class="headline">
-            <h1>My Name is <span>ESHIET RUSSELL ISAIAH</span></h1>
-            <p class="subtitle">Frontend Developer • Student • Creator</p>
+            <h1>Hi 👋 I'm <span>ESHIET RUSSELL ISAIAH</span></h1>
+            <p class="subtitle">Frontend Developer </p>
+            <p>I build responsive, user-friendly web applications using HTML, CSS, JavaScript, and React. I enjoy turning ideas into real products and continuously improving through hands-on projects.</p>
             <img src="pictures\IMG-20260226-WA0000.jpg" class="profile-pic" alt="possibly a picture of Eshiet Russell" />
-            <a href="Isaiah-Eshiet-Russell_CV.pdf" class="download-btn" download>Download CV</a>
+            <div class="button-container">
+                <a href="Isaiah-Eshiet-Russell_CV.pdf" class="download-btn" download>Download Resume</a>
+                <a href="#projects" class="view-work-btn">View My Work</a>
+            </div>
             <h2 id="about">About Me</h2>
         </div>
         <div class="about-me">
@@ -68,80 +73,265 @@
     </header>
 
     <!-- this is the skills section -->
+    
     <section id="skills">
-        <h2 id="skill">My Skills/Tools</h2>
-       <div class="skill-container">
-            <div class="skills">
-                <i class="fa-brands fa-html5 fa-2xl" style="color: #d83518;"></i>
-                <p>Html</p>
+
+    <h2>Skills & Tools</h2>
+    <p class="section-subtitle">
+        Technologies I use to build responsive and user-friendly web applications.
+    </p>
+
+    <div class="skills-container">
+
+        <!-- Frontend -->
+
+        <div class="skill-category">
+
+            <h3>Frontend Development</h3>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5 html"></i>
+                    <span>HTML5</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt css"></i>
+                    <span>CSS3</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-js js"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-react react"></i>
+                    <span>React</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-mobile-screen-button responsive"></i>
+                    <span>Responsive Design</span>
+                </div>
+
             </div>
 
-            <div class="skills">
-                <i class="fa-brands fa-css3-alt css-icon"></i>
-                
-                <p>CSS</p>
+        </div>
+
+        <!-- Tools -->
+
+        <div class="skill-category">
+
+            <h3>Tools</h3>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
+                    <span>VS Code</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-git-alt git"></i>
+                    <span>Git</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-github github"></i>
+                    <span>GitHub</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-figma figma"></i>
+                    <span>Figma</span>
+                </div>
+
             </div>
 
-            <div class="skills">
-                <i class="fa-brands fa-square-js fa-2xl" style="color: #a7c60c;"></i>
-                <p>JavaScript</p>
+        </div>
+
+        <!-- Learning -->
+
+        <div class="skill-category">
+
+            <h3>Currently Learning</h3>
+
+            <div class="skills-grid">
+
+                <div class="skill-card learning">
+                    <i class="fa-brands fa-react react"></i>
+                    <span>Advanced React</span>
+                </div>
+
+                <div class="skill-card learning">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>State Management</span>
+                </div>
+
+                <div class="skill-card learning">
+                    <i class="fa-solid fa-server"></i>
+                    <span>Backend Development</span>
+                </div>
+
+                <div class="skill-card learning">
+                    <i class="fa-brands fa-node-js node"></i>
+                    <span>Node.js</span>
+                </div>
+
             </div>
 
-            <div class="skills">
-                <i class="fa fa-laptop fa-2xl responsive-icon"></i>
-                <p>Responsive Design</p>
-            </div>
-            
-            <div class="skills">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Vs code" width="40" class="vscode-icon">
-                <p>VS Code</p>
-            </div>
-            
-            <div class="skills">
-                <i class="fa-brands fa-git-alt git-icon"></i>
-                <p>Git/Github</p>
-            </div>
-       </div>
-    </section>
+        </div>
+
+    </div>
+
+</section>
 
     <!-- this is the projects section -->
     <section id="projects">
-        <h2 id="projecs">Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <p class="projects"><strong>Personal Portfolio</strong><br>A portfolio website using Html, CSS, and JavaScript</p>
-                <a href="https://astonishing-alpaca-12a6ed.netlify.app" target="_blank">Open Site</a>
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+        <!-- Featured Project -->
+        <div class="project-card featured">
+
+            
+            
+            <div class="project-image">
+                <img src="pictures/mexi-medicals.jpg" alt="Mexi Medicals">
+            </div>
+            
+            <div class="project-content">
+                
+                <span class="featured-tag">⭐ Featured Project</span>
+                
+                <h3 class="h3">Mexi Medicals</h3>
+
+                <p>
+                    A deployed full-stack e-commerce application featuring
+                    authentication, product browsing, shopping cart
+                    functionality, backend integration, and a responsive
+                    user experience.
+                </p>
+
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                </div>
+
+                <div class="project-buttons">
+                    <a href="https://mexi-medicals.vercel.app" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                    </a>
+
+                    <a href="https://github.com/russell952/Mexi-Frontend" target="_blank">GitHub</a>
+                </div>
+
             </div>
 
-            <div class="project-card">
-                <p class="projects"><strong>Image Search App</strong><br>A clean app for searching images using API data with clean dynamic UI</p>
-                <a href="https://russell952.github.io/Image_Search_app/" target="_blank">Open Site</a>
-            </div>
-
-            <div class="project-card">
-                <p class="projects"><strong>To do List App</strong><br>An efficient app for managing tasks seamlessly</p>
-                <p style="color: green;">In progress</p>
-            </div>
         </div>
-    </section>
+
+        <!-- Portfolio -->
+
+        <div class="project-card">
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+                A responsive portfolio website built with HTML, CSS and
+                JavaScript.
+            </p>
+
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <a href="https://astonishing-alpaca-12a6ed.netlify.app" target="_blank">
+               <i class="fa-solid fa-arrow-up-right-from-square"></i>  View Project
+            </a>
+
+        </div>
+
+        <!-- Image Search -->
+
+        <div class="project-card">
+
+            <h3>Image Search App</h3>
+
+            <p>
+                Search and download images through an API with a clean,
+                responsive interface.
+            </p>
+
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>API</span>
+            </div>
+
+            <a href="https://russell952.github.io/Image_Search_app/" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>  View Project
+            </a>
+
+        </div>
+
+        <!-- Todo -->
+
+        <div class="project-card">
+
+            <h3>To-do List</h3>
+
+            <p>
+                A task management application currently under development.
+            </p>
+
+            <span class="status">🚧 In Progress</span>
+
+        </div>
+
+    </div>
+
+</section>
 
 
     <section class="footer">
-       <footer>
+       <div class="footer-content">
          
-        <p>Let's Connect</p>
-            <div class="whatsapp-container">
+        <h3>Let's Connect</h3>
+
+        
+            <div class="social-links">
+
                 <a class="whatsapp-btn"
                 href="https://wa.me/2348037073519"
                 target="_blank">
-                WhatsApp
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
                 </a>
-                <button class="LinkedIn-btn"><a href="https://www.linkedin.com/in/russell-eshiet-9944b6384" class="email">Linkedin</a></button>
-                <button class="email-btn"><a href="mailto:russelleshiet107@gmail.com" class="email">Email</a></button>
+                
+                <a href="https://www.linkedin.com/in/russell-eshiet-9944b6384" class="LinkedIn-btn" target="_blank">
+                    Linked<i class="fa-brands fa-linkedin"></i>
+                </a>
+                
+
+                
+                <a href="mailto:russelleshiet107@gmail.com" class="email-btn">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+
+                <a href="https://github.com/Russell952" target="_blank" class="github-link">
+                    <i class="fa-brands fa-github fa-2xl github-icon"></i> GitHub
+                </a>
             </div>
 
             <p>&copy; 2026 Eshiet Russell. All rights reserved.</p>
-       </footer>
+       </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -151,25 +341,6 @@
 
 <script src="script.js"></script>
 <script>
-// document.addEventListener("DOMContentLoaded", function () {
-//   const hamburger = document.getElementById("hamburger");
-//   const navLinks = document.getElementById("nav-links");
-
-//   hamburger.addEventListener("click", function (e) {
-//     e.stopPropagation();
-//     navLinks.classList.toggle("active");
-//   });
-
-//   document.addEventListener("click", function (e) {
-//     const isClickInsideMenu = navigation.contains(e.target);
-//     const isClickOnHamburger = hamburger-menu.contains(e.target);
-
-//     if (!isClickInsideMenu && !isClickOnHamburger) {
-//         hamburger-menu.classList.remove("active")
-//         navigation.classList.remove("active")
-//     }
-//   })
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.getElementById("hamburger");
@@ -193,6 +364,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 </script>
 </body> 
 </html>
